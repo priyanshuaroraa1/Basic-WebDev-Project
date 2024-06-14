@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Accessibility Page</title>
+</head>
+<body>
+    <div class="grid">
+
+        <header id="accessibility-header">
+            <nav id="toTop">
+                <a href="index.html">
+                    <img class="nav-logo" src="assets/images/oslometLogo.png" alt="Oslomet Logo">
+                </a>
+
+                <div class="nav-container" id="nav-js">
+                    <img class="menu" src="assets/images/x.png" onclick="hideMenu()" alt="exit icon" >
+               
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a class="active" href="accessibility.html">Accessibility</a></li>
+                        <li><a href="topical.html">Topical</a></li>
+                        <li><a href="fun.html">Sneakers</a></li>
+                    </ul> 
+                </div>
+                
+                <img class="menu" src="assets/images/navbarMenu.png" onclick="showMenu()" alt="navbar menu icon">
+            </nav>
+            
+            <div class="header-text">
+                <h1>Accessibility</h1>
+                <h2>Testing our code, and making our website accessible</h2>
+                <p>Do you want to know how we checked and validated our code,</p>
+                <p>for accsessibility and universal design?</p>
+            </div>
+            <a href="#toTop"><div class="top">TOP</div></a>
+
+        </header>
+
+
+        <main>
+            <section>
+                <div class="col1">
+                    <h3>What is Accessibility?</h3>
+                    <p>
+                        Accessibility refers to the ability to perceive, understand,
+                        navigate, and interact with electronic information and to
+                        participate actively in the digital world. The implementation of
+                        accessibility measures should take into consideration visual, auditory,
+                        physical, speech, cognitive, and neurological disabilities.
+                    </p>
+
+                    <p>
+                        Our team started to discuss the aspects of universal and inclusive design.
+                        We went through some of the didibilities that people might have, and ensured
+                        that our website would be accessible for them as well.
+                    </p>
+            
+                </div>
+                
+                <div class="col2">
+                    <img class="section-img" src="assets/images/reflection.jpg" alt="Macbook Pro portraying some code">
+                </div>
+            </section>    
+
+            <section>
+                <div class="col1 reverse">
+                    <img class="section-img" src="assets/images/badContrast.jpg" alt="Bad contrast example. Lightblue background with white text">
+                    <img class="section-img" src="assets/images/goodContrast.jpg" alt="Good contrast example. black background with white text">
+                </div>
+                
+                <div class="col2 reverse">
+                    <h3>How did we make it Accessible?</h3>
+                    <p>
+                        In order to facilitate accessibility, and secure that visually impeared people
+                        could navigate easilily through our website, we used a screen reader program, which
+                        uses a speech synthesizer to enable blind or visually impaired users to read the text
+                        displayed on the computer screen. Alongside this we also had in mind that our website
+                        should be navigable by keyboard for people with motor impairment. There are no time limits
+                        in the website, and we have used easy and understandable navigations and functions. In addition,
+                        we have made sure that the links and buttons are in good enough size.
+                    </p>
+
+                    <p>
+                        The text we used avoided complex sentences and the link names were as short and precise as
+                        possible. Every link opens in a new tab, expect the ones linking the different pages. Another
+                        strategic thing our group was thinking about was using the correct heading hierarchy (&lt;h1&gt; &lt;h2&gt; &lt;h3&gt;).
+                        As a result, our website became more organized and more accessible to screen readers. Then we included ALL
+                        the text for all the pictures, which presented the draft we wanted to present with the picture. 
+                    </p>
+
+                    <p>
+                        For color use, we used colors to separate and organize our content. Contrast is an important
+                        aspect, and to test this we used "<a href="https://color.adobe.com/nb/create/color-contrast-analyzer" target="blank">Adobe color</a>" 
+                        contrast checker. This website made it easy for us to check how accessible the color usage is by entering the color
+                        for the background and text. (VIS BILDE). colorsafe.co - provided us with accessible color palettes based on WCAG Guidelines.
+
+                    </p>
+                </div>
+            </section> 
+            
+
+            <section>
+                <div class="col1">
+                    <h3>Testing of Accessibility:</h3>
+                    <p>
+                        Making your web and mobile apps accessible to as many people as possible is one of the objectives of
+                        accessibility testing. It can help those with disabilities, such as vision impairments, hearing impairments,
+                        and other difficulties, to use your apps. As for mobile devices, we added media queries to make sure the website
+                        would display smoothly on smaller screens. Since our navigation bar has five items, they would not be as neatly
+                        displayed on smaller screens. Instead, we made our burger menu clickable with JavaScript.
+                    </p>
+
+                    <p>
+                        For the testing we used multiple of online accessible checkers, some of them was: &nbsp;
+                        <a href="http://checkers.eiii.eu/en/pagecheck2.0/" target="blank"> Tingtun Checker</a>,&nbsp;
+                        <a href="https://wave.webaim.org/" target="blank">Wave</a>,&nbsp;
+                        <a href="https://achecker.achecks.ca/checker/index.php" target="blank"> Achecker</a>.
+                    </p>
+
+                    <p>
+                        An example of a problem we faced can be seen in these pictures, when making our nav-bar we used the
+                        HTML tag "strong". This gave us an error so we decided to make the font weight bold in CSS instead. 
+                    </p>
+                </div>
+                
+                <div class="col2">
+                    <img class="section-img" src="assets/images/error1.jpg" alt="Error code in the HTML code">
+                    <img class="section-img" src="assets/images/fix1.jpg" alt="How we fixed our error in CSS">
+                </div>
+            </section>  
+        </main>
+
+
+        <footer>
+            <div class = "a">
+                <a href="index.html">
+                    <img class="footer-logo" src="assets/images/oslometLogo.png" alt="OsloMet logo">
+                </a>
+            </div>
+            
+            <div class="b">
+                <h3>Pages:</h3>
+                <ul class="footer-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a class="active" href="accessibility.html">Accessibility</a></li>                   
+                    <li><a href="topical.html">Topical</a></li>
+                    <li><a href="fun.html">Sneakers</a></li>
+                </ul>
+            </div>
+
+            <div class="c">
+                <h3>Made by:</h3>
+                <p>307</p>
+                <p>428</p>
+                <p>421</p>
+                <p>352</p> 
+                <p>320</p>
+                <p>269</p>
+            </div>
+
+            <div class="d">
+                <h3>Sources:</h3>
+                <a href="sources.pdf" target="blank">Sources</a>
+            </div>
+                
+            <div class="e">
+                <p class="copyright">  Copyright All Rights Reserved © 2021  </p>
+            </div>     
+        </footer>  
+        
+    </div>
+    <!-- Linking to external JavaScript file: menu.js -->
+    <script src="menu.js"></script>
+</body>
+</html>

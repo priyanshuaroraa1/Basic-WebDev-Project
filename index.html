@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Home Page</title>     
+</head>
+<body>
+
+    <!-- Grid container for layout & composition -->
+    <div class="grid">
+        
+        <!-- Header. Inside the header you will find a navbar & some info text -->
+        <header id="index-header">
+            <nav id="toTop">
+                <a href="index.html">
+                    <img class="nav-logo" src="assets/images/oslometLogo.png" alt="Oslomet Logo">
+                </a>
+
+                <div class="nav-container" id="nav-js">
+                    <img class="menu" src="assets/images/x.png" onclick="hideMenu()" alt="Exit icon" >
+                    <ul class="nav-links">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="topical.html">Topical</a></li>
+                        <li><a href="fun.html">Sneakers</a></li>
+                    </ul> 
+                </div>
+
+                <img class="menu" src="assets/images/navbarMenu.png" onclick="showMenu()" alt="Navbar menu icon">
+                
+            </nav>
+            <div class="header-text">
+                <h1>Being a first-year student at OsloMet</h1>
+                <h2>Our experieces of becoming students</h2>
+                <p>This website is made by first-year students at OsloMet,</p>
+                <p>who tell about their experiences and difficulties.</p>
+            </div>
+            <a href="#toTop"><div class="top">TOP</div></a>
+        </header>
+
+        <!-- Main content. -->
+        <main>
+            <section>
+                <div class="col1">
+                    <h3>Reflection</h3>
+                    <p>
+                        This page consists of reflection texts describing the challenges
+                        that us students have faced this semester. 
+                        This semester has brought a lot of different scenarios
+                        that we have never faced before and needed to solve. 
+                        The discussion mainly considers the group members´ transition
+                        from upper-secondary school to university. 
+                        The biggest difficulties that we have faced this year is
+                        learning to code, the transition from being a pupil to becoming
+                        a student, and to manage the workload of the different subjects. 
+                    </p>
+                    <button onclick= "document.location='reflection.html'">Learn More</button>
+                </div>
+                
+                <div class="col2">
+                    <img class="section-img" src="assets/images/reflection.jpg" alt="Macbook with coding on the screen">
+                </div>
+            </section>    
+
+            <section>
+                <div class="col1 reverse">
+                    <img class="section-img" src="assets/images/access.jpg" alt="Glasses on top of a book">
+                </div>
+                
+                <div class="col2 reverse">
+                    <h3>Accessibility</h3>
+                    <p>
+
+                        This page consists of everything we did to make our webiste accessibile. 
+                        Accsessibility is something very important to take into consideration when 
+                        making an app or a website so that the page can be experienced at an equal 
+                        level for whoever visits it. This page will run you thorougly through the 
+                        choices and the different things we implemented to make our webiste as 
+                        accessibile as it could be. 
+
+                       
+                    </p>
+                    <button onclick= "document.location='accessibility.html'">Learn More</button>
+                   
+                </div>
+            </section> 
+            
+            <section>
+                <div class="col1">
+                    <h3>Topical</h3>
+                    <p>
+                        This page consists of texts from our subject 
+                        DATA1100 - Technology and Society for Programmers,
+                        that we have written throughout the semester. 
+                        The theme of the texts are digital cities and the welfare states. 
+                        The text goes through innovation, and how 3D food engineering can 
+                        become a future job that can create new and useful values for us humans. 
+                    </p>
+                    <button onclick= "document.location='topical.html'">Learn More</button>
+                </div>
+                
+                <div class="col2">
+                    <img class="section-img" src="assets/images/topical.jpg" alt="Farm at nighttime">
+                </div>
+            </section> 
+
+            <section>
+                <div class="col1 reverse">
+                    <img class="section-img" src="assets/images/fun.jpg" alt="Shoes laid on a concrete court">
+                </div>
+                
+                <div class="col2 reverse">
+                    <h3>Sneakers Shop</h3>
+                    <p>
+                        This page will display different sneakers that we
+                        are selling. Browse through this sneaker page to look at
+                        really cool and exclusive shoes. If you are in for some new shoes, 
+                        then this is the page you are looking for!
+                    </p>
+                    <button onclick= "document.location='fun.html'">Learn More</button>
+                </div>
+            </section>  
+        </main>
+
+        <!-- Footer. -->
+        <footer>
+            <div class = "a">
+                <a href="index.html">
+                    <img class="footer-logo" src="assets/images/oslometLogo.png" alt="OsloMet logo">
+                </a>
+            </div>
+            
+            <div class="b">
+                <h3>Pages:</h3>
+                <ul class="footer-link">
+                    <li><a class="active"  href="index.html">Home</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="topical.html">Topical</a></li>
+                    <li><a href="fun.html">Sneakers</a></li>
+                </ul>
+            </div>
+
+            <div class="c">
+                <h3>Made by:</h3>
+                <p>307</p>
+                <p>428</p>
+                <p>421</p>
+                <p>352</p> 
+                <p>320</p>
+                <p>269</p>
+            </div>
+
+            <div class="d">
+                <h3>Sources:</h3>
+                <a href="sources.pdf" target="blank">Sources</a>
+                
+            </div>
+                
+            <div class="e">
+                <p class="copyright">  Copyright All Rights Reserved © 2021  </p>
+            </div>     
+        </footer>
+    </div>
+    <!-- Linking to external JavaScript file: menu.js -->
+    <script src="menu.js"></script>
+</body>
+</html>
